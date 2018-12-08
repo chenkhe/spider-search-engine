@@ -1,0 +1,62 @@
+/*  Menu styling */
+nav.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.menu li.menuItem {
+	float: right;
+	width: 33.33%;
+	text-align: center;
+	min-width: 33.33%;
+	position: relative;
+}
+
+nav.menu li.menuItem a {
+	background: none;
+	display: block;
+}
+
+nav.menu li.dropDown ul {
+	opacity: 0;
+	visibility: hidden;
+	top: 25px;
+	position: absolute; /* absolute avoids dropdown menu from pushing down content below*/
+	width: 100%;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+nav.menu li.dropDown>a:after {
+	content: ' \25b6'; /* Arrow pointing to right */
+}
+
+nav.menu a {
+	text-decoration: none;
+	color: black;
+	font: bold 16px/30px sans-serif; /* use line height to make the menu to have 50px height*/
+	border-bottom: 1px solid white;
+}
+
+/*  Hover effect for menu*/
+nav.menu li.menuItem:hover a{
+	background: snow;
+	border-bottom: 1px solid black;
+}
+
+nav.menu li.dropDown:hover>a:after {
+	content: ' \25bc'; /* Arrow pointing down */
+}
+
+nav.menu li.dropDown:hover ul{
+	visibility: visible;
+	opacity: 1;
+	top: 31px; /* Extra 1px to account for bottom border of list item in menu navigation bar */
+}
+
+nav.menu li.dropDown ul li:hover a{
+	background: lightgrey;
+	border-bottom: 2px solid black; /* 1px extra thick to make indication of on focus, also add effect of moving down*/
+}

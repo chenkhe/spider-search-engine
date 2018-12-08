@@ -1,0 +1,45 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+div {
+	width: 100%;
+	text-align: center;
+}
+form, h3 {
+	display: inline;
+}
+input {
+	font-size: 16px;
+}
+
+table, th, td, caption {
+    border: 1px solid black;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    border: none;
+}
+caption {
+	background: #dbb768;
+	font-weight: bold;
+	width: inherit;
+}
+td {
+	font-size: 14;
+}
+div#searchEngineName {
+	display: inline;
+	font-family: fantasy;
+}
+img {
+	vertical-align: middle;
+}
